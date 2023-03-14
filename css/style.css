@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+}
+:root{
+    --soft-orange:#FFE9D5;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black-plus:#282623;
+    --grey:#e5e5e5;
+    --off-white:#FAF8F7;
+    --white: #FFFFFF;
+    --gradient-main: linear-gradient(to right top, #f7edd9, #f9f1e2, #fbf5ea, #fdfaf3, #fffefc);
+    --color-text-main: #57190a;
+    --color-text-secundary:#3d1207;
+    --footer-main: #910f3f;
+}
+.class--basic-style{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    padding: 10px 15px;
+    flex-direction: column;
+}
+body{
+    background-color: #f2efdd;
+}
+header{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+
+}
+header nav{
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    align-items: center;
+    background-color: #f2efdd;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header nav span{
+    width: 30px;
+    height: 30px;
+}
+nav .logoRes{
+    width: 125px;
+}
+nav .logoSale{
+    width: 30px;
+}
+.header--title-container{
+    background-image: url('/assets/images/comidaEcuatoriana.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 380px;
+}
+.info-restaurant-init{
+    background-color: #f2efdd;
+    text-align: center;
+    border-bottom: solid 2px var(--color-text-main);
+}
+.info-restaurant-init h1{
+    font-size: 4.1rem;
+    color: var(--color-text-main);
+    font-weight: 400;
+    padding: 30px 20px 0;
+}
+.info-restaurant-init p{
+    font-size: 1.8rem;
+    padding: 20px 15px;
+    color: var(--color-text-main);
+    font-weight: 400;
+    font-style: italic;
+}
+.header--button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.header--button{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 7px 16px;
+    min-height: 36px;
+    min-width: 36px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;    
+    margin-bottom: 20px;
+}
+.header--button:hover {
+    background: #006e52;
+}
+/* ----------------------------------------------------------- */
+/* historia */
+.main-info-restaurant {
+    border-bottom: solid 2px var(--color-text-main);
+}
+.main-info-restaurant .info--detail-title h2{
+    font-weight: bold;
+    font-size: 3.4rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: solid 3px;
+    color: var(--color-text-main);
+    width: 75%;
+}
+.main-info-restaurant .info--detail-history p:first-child{
+    font-size: 1.6rem;
+    font-style: italic;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    line-height: 2.1;
+    color: var(--color-text-main);
+}
+.main-info-restaurant .info--detail-history p:last-child{
+    font-size: 1.6rem;
+    padding-right: 20px;
+    line-height: 2.1;
+    color: var(--color-text-main);
+}
+.image-detail-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.main-info-restaurant img{
+    margin-top: 20px;
+    width: 320px;
+    border-radius: 25px;
+    border: solid 3px var(--color-text-main);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/* ----------------------------------------------------------- */
+/* Conoce nuestro menu */
+.menu-info .info--menu-title{
+    text-align: center;
+    margin: 18px 0;
+}
+.menu-info .info--menu-title h3{
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: var(--color-text-main);
+}
+.menu-info .info--menu-title h2{
+    font-weight: bold;
+    font-size: 3.0rem;
+    margin: 10px 0;
+    border-bottom: solid 3px;
+    color: var(--color-text-main);
+}
+.menu-info .info--detail-menu p{
+    font-size: 1.6rem;
+    padding-right: 20px;
+    line-height: 1.6;
+    color: var(--color-text-main);
+}
+/* menu */
+.menu--detail-container{
+    margin: 25px 0;
+    /* display: flex;
+    flex-direction: column; */
+    height: max-content;
+}
+.menu--detail-container section{
+    margin: 10px 0;
+}
+.sections a{
+    display: flex;
+    align-items: center;
+    padding: 12px 12px;
+    min-width: 320px;
+    text-decoration: none;
+    color: var(--color-text-secundary);
+    font-size: 2.6rem;
+    font-weight: bold;
+    border: solid 4px var(--color-text-main);
+}
+.sections span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/icons/arrow.png');
+    background-size: cover;
+    margin-right: 8px;
+}
+.info--detail-item article{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+.info--detail-item article p{
+    font-size: 1.8rem;
+    height: max-content;
+    padding: 8px 0;
+}
+.info--detail-item article p:first-child{
+    max-width: 75%;
+}
+.info--detail-item .item--price{    
+    width: 65px;
+    justify-content: left;
+}
+.detail--item-menu{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+/* platos Fuertes */
+.detail--item-menu p:first-child{
+    padding-bottom: 2px;
+}
+.detail--item-menu p:last-child{
+    width: 90%;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0;
+}
+
+/* animacion */
+.sections article{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1.4s ease;
+}
+/* .sections:target article{
+    max-height: max-content;
+} */
+.sections.active article{
+    max-height: max-content;
+}
+/* opened */
+.opened--restaurant{
+    width: 100%;
+    border-top: solid 2px var(--color-text-main);
+}
+.opened--restaurant h2{
+    text-align: center;
+    color: var(--color-text-main);
+    font-size: 2.1rem;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+.time--opened{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--color-text-secundary);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    height: 100px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: var(--off-white);
+}
+.time--opened p{
+    font-size: 1.6rem;
+    padding: 5px 0;
+}
+/* ubi */
+.inf--ubi-restaurant{
+    color: var(--color-text-secundary);
+    /* padding: 15px 0; */
+}
+.inf--ubi-restaurant h3{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.inf--ubi-restaurant div{
+    padding: 15px 0;
+}
+.inf--ubi-restaurant p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.info--ubication-restaurant{
+    width: 100%;
+}
+.map--ubication iframe{
+    width: 100%;
+    min-width: 320px;
+}
+/* Footer */
+footer{
+    background-color: var(--footer-main);
+    width: 100%;
+    /* text-align: center; */
+    color: var(--off-white);
+}
+footer .title--footer h2{
+    font-size: 1.8rem;
+    padding-top: 30px;
+    text-align: center;
+}
+footer .links--page-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 35px;
+}
+footer .links--page-section p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 25px 0;
+    font-weight: 700;
+}
+footer .links--page-section ul li{
+    list-style: none;
+    padding: 10px 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+footer .info--footer-restaurant p:first-child{
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 25px;
+}
+footer .info--footer-restaurant p:last-child{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
