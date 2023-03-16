@@ -34,14 +34,13 @@ header{
     width: 100%;
     height: max-content;
     text-align: center;
-
 }
 header nav{
     width: 100%;
     min-width: 320px;
     display: flex;
     justify-content: space-between;
-    padding: 12px 15px;
+    padding: 12px 25px;
     align-items: center;
     background-color: #f2efdd;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -56,8 +55,9 @@ nav .logoRes{
 nav .logoSale{
     width: 30px;
 }
+
 .header--title-container{
-    background-image: url('/assets/images/comidaEcuatoriana.jpg');
+    background-image: url('https://lh6.googleusercontent.com/vQ15oCIKKu4Sxeu6fj2chpc9KcaJ1gurqvkjOoYc36CmfwyOivaqYcHmTgB83hMP2L4=w2400');
     background-size: cover;
     background-repeat: no-repeat;
     height: 380px;
@@ -193,24 +193,27 @@ nav .logoSale{
     font-size: 2.6rem;
     font-weight: bold;
     border: solid 4px var(--color-text-main);
+    background-color: var(--off-white);
 }
 .sections span{
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url('/assets/icons/arrow.png');
+    background-image: url('https://lh5.googleusercontent.com/WycxddFS7ETII2CzC7yxecNw5DBnNL9Pez6u9XQiiF0jxmt4VPaGwA6wroY9Der2Qrg=w2400');
     background-size: cover;
     margin-right: 8px;
 }
 .info--detail-item article{
     display: flex;
-    justify-content: space-between;
     padding: 0 8px;
+}
+.info--detail-item article:last-child{
+    justify-content: center;
 }
 .info--detail-item article p{
     font-size: 1.8rem;
     height: max-content;
-    padding: 8px 0;
+    padding: 8px 10px;
 }
 .info--detail-item article p:first-child{
     max-width: 75%;
@@ -226,27 +229,51 @@ nav .logoSale{
 }
 /* platos Fuertes */
 .detail--item-menu p:first-child{
-    padding-bottom: 2px;
+    padding-bottom: 0;
+    padding-top: 8px;
+    font-weight: 500;
 }
 .detail--item-menu p:last-child{
     width: 90%;
     font-size: 1.4rem;
     font-weight: 300;
-    padding: 0;
+    padding: 0 10px;
+
 }
 
+.photo-item img{
+    width: 185px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: solid 3px var(--color-text-main);
+    margin-top: 15px;
+}
+.photo-item p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 15px;
+    color: var(--color-text-secundary);
+    text-align: center;
+}
+.order--buttton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
 /* animacion */
 .sections article{
     overflow: hidden;
     max-height: 0;
-    transition: max-height 1.4s ease;
+    transition: max-height 0.3s ease-out;
 }
-/* .sections:target article{
+.sections:target article{
+    max-height: fit-content;
+    scroll-behavior: smooth;
+}
+/* .sections.active article{
     max-height: max-content;
 } */
-.sections.active article{
-    max-height: max-content;
-}
 /* opened */
 .opened--restaurant{
     width: 100%;
@@ -283,6 +310,7 @@ nav .logoSale{
 .inf--ubi-restaurant h3{
     text-align: center;
     font-size: 1.8rem;
+    margin-top: 40px;
 }
 .inf--ubi-restaurant div{
     padding: 15px 0;
@@ -293,6 +321,9 @@ nav .logoSale{
 }
 .info--ubication-restaurant{
     width: 100%;
+}
+.map--ubication {
+    border-top: solid 2px var(--color-text-secundary);
 }
 .map--ubication iframe{
     width: 100%;
@@ -317,10 +348,14 @@ footer .links--page-section{
     padding-left: 35px;
 }
 footer .links--page-section p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    padding: 25px 0;
+    padding: 18px 0;
     font-weight: 700;
+}
+footer .links--page-section a{
+    text-decoration: none;
+    color: var(--off-white);
 }
 footer .links--page-section ul li{
     list-style: none;
@@ -334,13 +369,29 @@ footer .info--footer-restaurant p:first-child{
     padding-top: 25px;
 }
 footer .info--footer-restaurant p:last-child{
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     text-align: center;
     padding: 15px 0;
 }
-
-
-
+footer .links--page-l2{
+    display: flex;
+    justify-content: space-around;
+}
+footer .links--page-l2 img{
+    width: 40px;
+}
+footer .links--page-l2 .legend--ecuador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .links--page-l2 .legend--ecuador p{
+    font-size: 1.0rem;
+    font-style: italic;
+    padding: 0;
+    font-weight: 400;
+}
 
 
 
