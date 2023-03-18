@@ -46,16 +46,35 @@ header nav{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 header nav span{
-    width: 30px;
+    width: 35px;
     height: 30px;
 }
 nav .logoRes{
     width: 125px;
 }
 nav .logoSale{
-    width: 30px;
+    width: 35px;
 }
-
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.header--button2{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    padding: 5px 8px;
+    min-height: 28px;
+    min-width: 35px;
+    color: #ffffff;
+    background: #008060;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;    
+}
 .header--title-container{
     background-image: url('https://lh6.googleusercontent.com/vQ15oCIKKu4Sxeu6fj2chpc9KcaJ1gurqvkjOoYc36CmfwyOivaqYcHmTgB83hMP2L4=w2400');
     background-size: cover;
@@ -71,11 +90,11 @@ nav .logoSale{
     font-size: 4.1rem;
     color: var(--color-text-main);
     font-weight: 400;
-    padding: 30px 20px 0;
+    padding: 25px 20px 0;
 }
 .info-restaurant-init p{
     font-size: 1.8rem;
-    padding: 20px 15px;
+    padding: 18px 15px;
     color: var(--color-text-main);
     font-weight: 400;
     font-style: italic;
