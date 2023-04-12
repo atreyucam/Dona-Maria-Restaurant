@@ -225,6 +225,7 @@ nav a{
 .info--detail-item article{
     display: flex;
     padding: 0 8px;
+    flex-direction: column;
 }
 .info--detail-item article:last-child{
     justify-content: center;
@@ -232,10 +233,16 @@ nav a{
 .info--detail-item article p{
     font-size: 1.8rem;
     height: max-content;
-    padding: 8px 10px;
+    padding: 8px 10px 2px;
+    font-weight: 500;
+}
+.description-english{
+    font: 1.4rem;
+    color: rgb(72, 71, 71);
+    padding: 0 10px 4px;
 }
 .info--detail-item article p:first-child{
-    max-width: 75%;
+    max-width: 90%;
 }
 .info--detail-item .item--price{    
     width: 65px;
@@ -249,17 +256,28 @@ nav a{
 /* platos Fuertes */
 .detail--item-menu p:first-child{
     padding-bottom: 0;
-    padding-top: 8px;
+    padding-top: 10px;
     font-weight: 500;
 }
-.detail--item-menu p:last-child{
-    width: 90%;
+.detail--item-menu p:nth-child(2){
+    width: 95%;
     font-size: 1.4rem;
     font-weight: 300;
     padding: 0 10px;
-
 }
-
+.detail--item-menu p:nth-child(3){
+    width: 95%;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 2px 10px 0;
+}
+.photo-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .photo-item img{
     width: 185px;
     border-radius: 15px;
@@ -342,7 +360,8 @@ nav a{
     width: 100%;
 }
 .map--ubication {
-    border-top: solid 2px var(--color-text-secundary);
+    border: solid 1.5px var(--color-text-secundary);
+    margin-bottom: 15px;
 }
 .map--ubication iframe{
     width: 100%;
@@ -412,7 +431,146 @@ footer .links--page-l2 .legend--ecuador p{
     font-weight: 400;
 }
 
+/* Responsive design */
 
+@media (min-width: 1024px){
+    header nav{
+        justify-content: space-between;
+    }
+    .header--button2{
+        width: 85px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .info-restaurant-init{
+        background-color: #f2efdd;
+        text-align: center;
+        border-bottom: none;
+    }
+    .header--title-container{
+        background-image: url('https://lh6.googleusercontent.com/vQ15oCIKKu4Sxeu6fj2chpc9KcaJ1gurqvkjOoYc36CmfwyOivaqYcHmTgB83hMP2L4=w2400');
+        background-size: cover;
+        background-repeat: space;
+        height: 650px;
+    }
+    .menu--detail-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-info-restaurant .info--detail-title h2{
+        color: var(--color-text-main);
+        width: 35%;
+    }
+    .main-info-restaurant .info--detail-history p:first-child{
+        font-size: 2.1rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        padding-left: 15px;
+
+    }
+    .main-info-restaurant .info--detail-history p:last-child{
+        font-size: 2.0rem;
+        padding-right: 20px;
+        padding-left: 15px;
+    }
+    .image-detail-history {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .main-info-restaurant img{
+        margin-top: 20px;
+        height: 240px;
+    }
+    .menu-info .info--menu-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-info .info--menu-title h2{
+        width: 50%;
+        border-bottom: solid 3px;
+        color: var(--color-text-main);
+    }
+    .menu-info .info--detail-menu p{
+        font-size: 1.8rem;
+        padding-right: 20px;
+        padding-left: 15px;
+        line-height: 1.6;
+        color: var(--color-text-main);
+        text-align: center;
+    }
+    .sections{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sections a{
+        width: 900px;
+    }
+    .info--detail-item{
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        width: 875px;
+    }
+    .detail--item-menu{
+        width: 412px;
+    }
+    #PlatosFuertes .photo-item img{
+        display: none;
+    }
+    #PlatosFuertes .photo-item p{
+        display: none;
+    
+    }
+    #bebidasCalientes .photo-item img{
+        display: none;
+    }
+    #bebidasCalientes .photo-item p{
+        display: none;
+    }
+    .opened--restaurant{
+        display: flex;
+        justify-content: center;
+    }
+    .time--opened{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: var(--off-white);
+        width: 500px;
+    }
+    .info--ubication-restaurant{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .inf--ubi-restaurant{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inf--ubi-restaurant h3{
+        font-size: 2.8rem;
+
+    }
+    .inf--ubi-restaurant p{
+        font-size: 2.6rem;
+    }
+    .map--ubication iframe{
+        width: 100%;
+        width: 750px;
+    }
+
+}
 
 
 
