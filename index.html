@@ -1,597 +1,785 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
+<html class="wide wow-animation" lang="en"> 
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dona Maria Restaurant</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <!-- <span></span> -->
-            <img src="https://lh6.googleusercontent.com/BzAFDtPof2kYGUUDkd60QhXw7IgJcAn3ngpsMyaRsKE165-ZYR5sodkUjmOQpviKAgg=w2400" alt="logoRestaurant" class="logoRes">
-            <div>
-                <button class="header--button2"><a href="https://order.tbdine.com/pickup/44803/menu" target="_blank">Ordenar <br> ahora</a></button>
-            </div>
-        </nav>
-        <div class="header--title-container">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
         </div>
-    </header>
-    <main>
-        <section class="info-restaurant-init">
-            <h1>Doña Maria Restaurant</h1>
-            <p>Cada familia tiene una historia, descubre la nuestra 👨‍👩‍👧‍👦</p>
-            <button type="button" class="header--button"><a href="#nuestroMenu">Conoce nuestro Menu</a></button>
-            
-        </section>
-        <section id="SobreNosotros" class="main-info-restaurant class--basic-style">
-            <div class="info--detail-title">
-                <h2>SOBRE NOSOTROS</h2>
+        <!-- <p>Loading...</p> -->
+      </div>
+    </div>
+    <div class="page"><a class="section section-banner d-none d-xl-flex"></a>
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel"> 
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a href="index.html"><img class="brand-logo-light" src="https://lh3.googleusercontent.com/pw/AP1GczORIHmiX-AuTIS37mky27mWhnu-Mzvkaxxaq9O6rX49Rb4yipPL9sk8YZWwO5wKsoTAx-TOxehqYXX2D2CM15kF7GMuv1s9UnK1OBDQIFYH5iczHHOWVk7reQ0waC6Uyuk_KR0n9zcNOkhA9QBI3AOfaE0np2F1VTF9nj060MnlumFP1Vjfa6-Ge7dqXtspCFBPXDgyjVIfLjkdq6l2ApIuN-KfX2Nb1pNOh9V0F7CvPlmlVyEAoWDfqy1g4_qiPnCCyoPjVNX5Y2oY17s22MR5kCIabpMY8HZu5kCzlDAXQWuipT03oG-1qhZoULiDLCxCZAoTQ9ndVcWguJdj26ePUrzehey7gzVnk7a2UOfPdr2LHzI0eQhkwUQ8Ot9ZLJ0Hc7_3zpnONXmXeUdd3XQ-m9B-VZ51wBoQDNGq_AUm9u1J5yhXzYaNKZJTmYIYieH1I0_UOWb4Q5cSHhprZOGp9-TG9WiHOHuCAak6a9qbeflTSFNnnP1c0tM86fG5T1iY6Q-Gd1hwCDpoRQOYRRwowDIWfRUeFltCRik7drng9pKkHdDoerbFcIjIHxmKwiN_WDXgs9BDJY4Xtf8a1BBdWpt4EQy7a7tuED7xFaMcN0Cf4dKSJidLLx2YWIMhtZ8PrzZpCbp1TtWgdVWFoQnSuToyB8dufR64OrwpqyFH9gnDuuITYgB6llA4_0LoEff4jMWfIr0NmhT42WAHxORQ-1FP-JGHW75e16-7-vCvwvPuPKVsE_6r7s1om6Bi9MWXzRRrMhZRNi8Zm9k8r-BW3J2SoW_W0FCq-t_qAmUAlxVQ-YvYF8KPUTDW_alNjJUvFZn6oqIj3kLNII7iopA-UucZcTeyNAQREudlb0MFGbDrO8g0ZLIz9kyHvhEXxJXhMWwr4X3F54SHIvQdN0OQMQ=w820-h627-s-no?authuser=0"  /></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#menu-res">Menu</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#section-about">Nosotros</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contactos-sec">Contactos</a>
+                      </li>
+                    </ul><a class="button button-white button-sm" href="https://order.tbdine.com/pickup/44803/menu">Ordena ahora</a>
+                  </div>
+                </div><a class="button button-white button-sm" href="https://order.tbdine.com/pickup/44803/menu">Ordena ahora</a>
+              </div>
             </div>
-            <div class="info--detail-history">
-                <P>Doña Maria Restaurant es el resultado de mas de 20 años de calidad y servicio personalizado.</P>
-                <p>
-                    ¡Es un placer disfrutar de tu compania en nuestro restaurante! Para ofrecerte nuestra amplia variedad de los
-                    deliciosos platos típicos de Ecuador y Centroamérica, preparados con ingredientes frescos y auténticos que 
-                    te van a encantar. Además, nuestro personal es súper amable y siempre está dispuesto a ayudarte a elegir el 
-                    plato perfecto que satisfaga tus antojos. ¡Así que vente y disfruta de la auténtica comida ecuatoriana en 
-                    un ambiente cálido y acogedor! Te esperamos con los brazos abiertos.
+          </nav>
+        </div>
+      </header>
+      <!-- Swiper-->
+      <section class="section section-lg section-main-bunner section-main-bunner-filter text-center">
+        <div class="main-bunner-img" style="background-image: url('https://lh6.googleusercontent.com/vQ15oCIKKu4Sxeu6fj2chpc9KcaJ1gurqvkjOoYc36CmfwyOivaqYcHmTgB83hMP2L4=w2400'); background-size: cover;"></div>
+        <div class="main-bunner-inner">
+          <div class="container">
+            <div class="box-default">
+              <h1 class="box-default-title">Doña Maria Restaurant</h1>
+              <div class="box-default-decor"></div>
+              <p class="big box-default-text">
+                Cada familia tiene una historia, descubre la nuestra.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bg-gray-1">
+        
+        <section class="section section-lg section-inset-1 bg-gray-1 pt-lg-0" id="section-about">
+          <div class="container">
+            <div class=" row row-50 justify-content-xl-between align-items-lg-center ">
+              <div class="col-lg-6 col-xl-5 wow fadeInRight ">
+                <br>
+                <h2>Nosotros</h2>
+                <p>Doña Maria Restaurant es el resultado de mas de 20 años de calidad y servicio personalizado.</p>
+                <p>¡Es un placer disfrutar de tu compania en nuestro restaurante! Para ofrecerte nuestra amplia variedad de los deliciosos platos típicos de Ecuador y Centroamérica, 
+                  preparados con ingredientes frescos y auténticos que te van a encantar. Además, nuestro personal es súper amable y siempre está dispuesto a ayudarte a elegir el plato 
+                  perfecto que satisfaga tus antojos. ¡Así que vente y disfruta de la auténtica comida ecuatoriana en un ambiente cálido y acogedor! Te esperamos con los brazos abiertos
                 </p>
+              </div>
             </div>
-            <div class="image-detail-history">                
-                <img src="https://lh5.googleusercontent.com/6rbUwGRHoCiuIS6ajuxBn8yqIHYmCzZeGiSenMlicD56Ws3DQtGjsPmLbgRkBLKZtCg=w2400" alt="Chugchucara-food">
-                <img src="https://lh6.googleusercontent.com/-EpTCXaRSiIymvbgQNDDVsjqHFNsWbTjlwXrSsQtxfXNUnQdiSZdqoVCkS9VQbAeq0Q=w2400" alt="Churrasco-food">
-            </div>
+          </div>
         </section>
-        <section id="nuestroMenu" class="menu-info class--basic-style">
-            <div class="info--menu-title">
-                <h3>DESCUBRE</h3>
-                <h2>NUESTRO MENU</h2>
+      </div>
+      <!-- Featured Offers-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-9 col-lg-7 wow-outer">
+              <div class="wow slideInDown">
+                <h2>Nuestros platos destacados</h2>
+                <p class="text-opacity-80">Ofertamos la delicia de la cocina ecuatoriana, en platos únicos de Ecuador.</p>
+              </div>
             </div>
-            <div class="info--detail-menu">
-                <p>Explora la textura, el color y, por supuesto, los mejores sabores con nuestro menu tradicional.
-                    Todos los ingredientes son frescos y cuidadosamente seleccionados. Disfruta de una experiencia gastronomica extraordinaria.
-                </p>
-            </div>
-            <div class="menu--detail-container">
-                <section id="Antojitos" class="sections">
-                    <a href="#Antojitos"><span></span>Antojitos</a>
-                    <div class="info--detail-item">
-                        <div>
-                            <article><p>Tortillas de dulce</p></article>
-                            <article><p>Huevos a la copa</p></article>
-                            <article><p>Quimbolitos</p></article>
-                            <article><p>Empanadas de queso</p></article>
-                            <article><p>Quesadilla de arroz</p></article>
-                            <article><p>Tamal de gallina</p></article>
-                            <article><p>Tamal de chipilin</p></article>
-                            <article><p>Tostada de queso</p></article>
-                            <article><p>Dbladitas de queso</p></article>
-                            <article><p>Platano maduro con queso y crema</p></article>
-                            <article><p>Chocos con tostado</p></article>
-                            <article><p>Chocos con tostado y chicharon</p></article>
-                        </div>
-                        <div>
-                            <article><p>Motee con chicharon</p></article>
-                            <article><p>Chicharon</p></article>
-                            <article>
-                                <p>Mixturiado</p>
-                                <h3 class="description-english">Fried tortilla topped with meat acompanied with lettuce and cheese</h3>
-                            </article>
-                            <article>
-                                <p>Salchipapas</p>
-                                <h3 class="description-english">French fries san sausage</h3>
-                            </article>
-                            <article>
-                                <p>Tortillas de verde</p>
-                                <h3 class="description-english">Fried sweet plantain with cheese and cream</h3>
-                            </article>
-                            <article>
-                                <p>Humitas de sal</p>
-                                <h3 class="description-english">Fresh grind corn mixed with cheese and steamed on tje corn hush</h3>
-                            </article>
-                            <article>
-                                <p>Empanadas de carne/pollo</p>
-                                <h3 class="description-english">Fried turnover stuffed with cheese</h3>
-                            </article>
-                            <article>
-                                <p>Alitas de pollo con Papas fritas</p>
-                                <h3 class="description-english">Chiken wings with tortillas</h3>
-                            </article>
-                            <article>
-                                <p>Flautas</p>
-                                <h3 class="description-english">Hard cheese tacos</h3>
-                            </article>
-                        </div>
-
-                        
-                    </div>
-                </section>
-                <section id="Baleadas" class="sections">
-                    <a href="#Baleadas"><span></span>Baleadas</a>
-                    <div class="info--detail-item">
-                        <div>
-                            <article>
-                                <p>Baleada sencilla</p>
-                            </article>
-                            <article>
-                                <p>Baleada regular</p>
-                            </article>
-                            <article>
-                                <p>Baleada con carne asada</p>
-                            </article>
-                            <article>
-                                <p>Baleada con pechuga de pollo asado</p>
-                            </article>
-                        </div>
-                        <article>
-                            <div class="photo-item">
-                            <img src="https://lh6.googleusercontent.com/n_IJW2JVW_EmB4tkBanpBGXj8UM6Rgj_ypSELBaJtC5VKt0jfOax0-_A23wBKTvRXuk=w2400" alt="Tortiila de verde">
-                            <p>Baleadas</p>
-                        </div>
-                        </article>
-                    </div>
-                </section>
-                <section id="DesAmericanos" class="sections">
-                    <a href="#DesAmericanos"><span></span>Desayunos Americanos</a>
-                    <div class="info--detail-item">
-                        <article>
-                            <p>Desayuno americano #1</p>
-                            <h3 class="description-english">Papas asadas, jamon, huevo frito y pan tostado</h3>
-                            <h3 class="description-english">Sauteed potatoes with ham, fried eggs and toasted bread</h3>
-                        </article>
-                        <article>
-                            <p>Desayuno americano #2</p>
-                            <h3 class="description-english">Papas asadas, huevos revueltos, tocino y pan tostado</h3>
-                            <h3 class="description-english">Sauteed potatoes with bacon,scrambled eggs toasted bread</h3>
-                        </article>
-                    </div>
-                </section>
-                <section id="DesCentro" class="sections">
-                    <a href="#DesCentro"><span></span>Desayunos Centroamericanos</a>
-                    <div class="info--detail-item">
-                        <article>
-                            <p>Desayuno Centroamericanos #1</p>
-                            <h3 class="description-english">Huevos rancheros, frijoles enteros, carne asada, queso, crema, aguacate y tres tortillas</h3>
-                            <h3 class="description-english">Delicious fried eggs ranchera style salsa acompanied with black beans, grilled steak, chees, cream, avocado and three tortillas</h3>
-                        </article>
-                        <article>
-                            <p>Desayuno Centroamericanos #2</p>
-                            <h3 class="description-english">Huevos revueltos, frijoles molidos, platano frito, queso, crema, aguacate y tres tortillas</h3>
-                            <h3 class="description-english">Scrambled eggs, spread beans, sweet plantain, cheese, cream, avocado and three tortillas.</h3>
-                        </article>
-                    </div>
-                </section>
-                <section id="Menestras" class="sections">
-                    <a href="#Menestras"><span></span>Menestras</a>
-                    <div class="info--detail-item">
-                        <article>
-                            <p>Menestra con carne asada</p>
-                            <h3 class="description-english">Acompañado con arroz, menestra, platano maduro y aguacate.</h3>
-                            <h3 class="description-english">Grilled steak acompanied with rice, menestra, sweet plantain.</h3>
-                        </article>
-                        <article>
-                            <p>Menestra con pechuga de pollo asado</p>
-                            <h3 class="description-english">Acompañado con arroz, menestra, platano maduro y aguacate.</h3>
-                            <h3 class="description-english">Grilled chicken acompanied with rice, menestra, sweet plantain and avocado.</h3>
-                        </article>
-                    </div>
-                </section>
-                <section id="Pupusas" class="sections">
-                    <a href="#Pupusas"><span></span>Pupusas</a>
-                    <div class="info--detail-item">
-                        <div>
-                            <article>
-                                <p>Pupusas de queso</p>
-                                <h3 class="description-english">Stuffed tortilla with cheese.</h3>
-                            </article>
-                            <article>
-                                <p>Pupusas de frijol y queso</p>
-                                <h3 class="description-english">Stuffed tortilla with cheese and beans</h3>
-                            </article>
-                        </div>
-                        <article>
-                            <div class="photo-item">
-                            <img src="https://lh5.googleusercontent.com/Xf1KfNU89LaRZav1sYvsb2nOs9dbpVHOFMcY_KHG4LsbB6PVfrtA0dvZwmRSVBdLPlI=w2400" alt="Tortiila de verde">
-                            <p>Pupusas de queso</p>
-                        </div>
-                        </article>
-                    </div>
-                </section>
-                <section id="tortillasVerde" class="sections">
-                    <a href="#tortillasVerde"><span></span>Tortillas de Verde</a>
-                    <div class="info--detail-item">
-                        <div>
-
-                            <article>
-                                <p>Desayuno Mamá Maria</p>
-                                <h3 class="description-english">Combinación de dos deliciosas tortillas de verde, huevos al gusto y bistec de carne.</h3>
-                                <h3 class="description-english">Combination of two plantain tortillas, grilled steak and special scrambled eggs.</h3>
-                            </article>
-                            <article>
-                                <p>Dos tortillas de Verde con dos huevos fritos</p>
-                                <h3 class="description-english">plantain tortillas with fried eggs.</h3>
-                            </article>
-                            <article>
-                                <p>Totilla de Verde</p>
-                            </article>
-                        </div>
-                        <article>
-                            <div class="photo-item">
-                            <img src="https://lh5.googleusercontent.com/y4UEsXKboBMTh72q5okMDkUhaDVcZoyQbig1Ks4p_teny26h-xOHmc_jO4cHTl8ElBo=w2400" alt="Tortiila de verde">
-                            <p>Tortillas de verde</p>
-                        </div>
-                        </article>
-                    </div>
-                </section>
-                <section id="Sopas" class="sections">
-                    <a href="#Sopas"><span></span>Sopas</a>
-                    <div class="info--detail-item">
-                        <div>
-
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Caldo de gallina</p>
-                                    <p> </p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Yahuarlocro</p>
-                                    <p></p>
-                                </div>
-                                <!-- <p class="item--price">$15.00</p> -->
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Sopa de Bolas de Verde</p>
-                                    <p></p>
-                                </div>
-                                <!-- <p class="item--price">$13.00</p> -->
-                            </article>
-                        </div>
-                        <article>
-                            <div class="photo-item">
-                                <img src="https://lh4.googleusercontent.com/YwHldrM7B5xhdp0oebsLCfd6tR5FN6vVLV8AgS7EVpgsOh9E8YxCfgzcSqZw-00sCTA=w2400" alt="Tortiila de verde">
-                                <p>Yahuarlocro</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-                <section id="PlatosFuertes" class="sections">
-                    <a href="#PlatosFuertes"><span></span>Platos fuertes</a>
-                    <div class="info--detail-item">
-                        <div class="content-1">
-
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Carne Asada con menestra</p>
-                                    <p>arroz, platano maduro, aguacate y menestra</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Pechuga de pollo asado</p>
-                                    <p>Acompañado con arroz, papas fritas y ensalada.</p>
-                                    <p>Grilled chicken acompanied with rice, french fries and salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Chuleta de cerdo con menestra</p>
-                                    <p>arroz, platano maduro y aguacate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Churrasco</p>
-                                    <p>Carne frita con papas fritas, arroz, huevo frito y ensalada</p>
-                                    <p>Delicious grilled steak, served with rice, french fries, fried eggs and salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Carne apanada</p>
-                                    <p>Carne apanada acompañado con arroz, papas fritas y ensalada</p>
-                                    <p>Cutlets steak, served with rice, French fried and salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Lomo salteado</p>
-                                    <p>Salteado con pimiento, cebolla y tomate, acompañado arroz y papas fritas</p>
-                                    <p>Lean tenderlain beef Sauteed with onions, tomatoes, rice and french fries.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Carne a la plancha</p>
-                                    <p>Arroz, frijoles negros, aguacate y platano maduro</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Llapingacho Ambateño</p>
-                                    <p>Deliciosa gallina guisada acompañada con arroz y ensalada.</p>
-                                    <p>Slow cooked stew served with rice and salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Llapingacho con fritada</p>
-                                    <p>Fritada acompañada con arroz, tortillas de papa, mote, huevo frito y ensalada.</p>
-                                    <p>Ecuadorian potatoes pancakes, white hominy, fried chunk, rice, fried egg and salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Casamiento</p>
-                                    <p></p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="content-2">
-
-                            
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Guatita</p>
-                                    <p>Panza acompañado con arroz, huevo frito, platano maduro y ensalada</p>
-                                    <p>Panza stew accompanied with rice, fried egg, sweet plantain and salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Seco de chivo - Goat stew</p>
-                                    <p>Acompañado con arroz, platano maduro y ensalada.</p>
-                                    <p>Slow cooked stew served iwth rice, sweet plantain and salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Bistec criollo al jugo</p>
-                                    <p>Acompañado con arroz, huevo frito, platano frito y aguacate</p>
-                                    <p>Sauteed steak, served with onions peppers and simmered tomatoes sauces, acompanied with rice, sweet plantain and avocado.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Bandera serrana</p>
-                                    <p>Seco de chivo acompañado con guatita y ceviche de camaron</p>
-                                    <p>Goat stew acompanied with panza, stew and lime marinated shrimp.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Calentado #1</p>
-                                    <p>Gallo pinto, huevo frito, carne asada, aguacate y platano maduro.</p>
-                                    <p>pink beans mixed with rice, fried eggs, grilled steak, avocado and sweet plantain.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Mixturiado</p>
-                                    <p>Fritada acompañada con mote, tostado, chochos, tortilla de Llapingacho y curtido.</p>
-                                    <p>Pull pork with white hominy, toasted corn, lupine beans with salad.</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Chugchucara</p>
-                                    <p>Fritada, tostado, canguil, empanada, platano maduro y papas</p>
-                                </div>
-                            </article>
-                            
-                            <article class="photo-container">
-                                <div class="photo-item">
-                                    <img src="https://lh6.googleusercontent.com/-EpTCXaRSiIymvbgQNDDVsjqHFNsWbTjlwXrSsQtxfXNUnQdiSZdqoVCkS9VQbAeq0Q=w2400" alt="Tortiila de verde">
-                                    <p>Churrasco</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-                <section id="Mariscos" class="sections">
-                    <a href="#Mariscos"><span></span>Mariscos</a>
-                    <div class="info--detail-item">
-                        <div>
-
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Encebollado</p>
-                                    <p>Sopa con Albacora, yuca, cebolla marinada, tomate y jugo de limon, con maiz tostado y canguil o arroz</p>
-                                </div>
-                                <!-- <p class="item--price">$13.00</p> -->
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Encebollado mixto</p>
-                                    <p>Encebollado con camaron</p>
-                                </div>
-                                <!-- <p class="item--price">$15.00</p> -->
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>ceviche de camaron</p>
-                                    <p>Cararones marinados con lima, cilandro y cebolla servidos con maiz tostado y canguil o arroz</p>
-                                </div>
-                                <!-- <p class="item--price">$13.00</p> -->
-                            </article>
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Arroz con camarones</p>
-                                    <p>Arroz mixto con camarones, patacones, arroz y ensalada</p>
-                                </div>
-                                <!-- <p class="item--price">$15.00</p> -->
-                            </article>
-                            
-                        </div>
-                        <div>
-                            
-                            <article>
-                                <div class="detail--item-menu">
-                                    <p>Camarones al ajillo</p>
-                                    <p>Camarones salteados con pimientos rojos, arroz y patacones</p>
-                                </div>
-                                <!-- <p class="item--price">$15.00</p> -->
-                            </article>
-                            <article>
-                                <div class="photo-item">
-                                    <img src="https://lh4.googleusercontent.com/gj7nElvXqljGfKMoCDPHfu3YJZGd6beMwWTjjl-4mkypYvNFtJ2TCrFBumuX_DKZLZ4=w2400" alt="Encebollado">
-                                    <p>Encebollado</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-                <section id="porcionesAdd" class="sections">
-                    <a href="#porcionesAdd"><span></span>Porciones adicionales</a>
-                    <div class="info--detail-item">
-                        <div>
-
-                            <article><p>Porcion de Arroz / Rice</p></article>
-                            <article><p>Aguacate</p></article>
-                            <article><p>1/2 Aguacate</p></article>
-                            <article><p>Platano maduro / Sweet plantain</p></article>
-                            <article><p>Porcion de curtido</p></article>
-                            <article><p>Porcion de fritada</p></article>
-                            <article><p>Canguil y maiz tostado</p></article>
-                            <article><p>Patacones / Tostones</p></article>
-                            <article><p>Frijoles rojos o negros</p></article>
-                        </div>
-                        <div>
-
-                            <article><p>Orden de Papas fritas</p></article>
-                            <article><p>Orden de chifles</p></article>
-                            <article><p>Orden de tortillas de maseca</p></article>
-                            <article><p>Tortillas de maiz / Corn tortilla</p></article>
-                            <article><p>Tortillas de harina/ Flour tortilla</p></article>
-                            <article><p>Tortillas de Llapingacho</p></article>
-                            <article><p>Porcion de mote</p></article>
-                            <article><p>Extra limon</p></article>
-                            <article><p>Side de Sangre</p></article>
-                        </div>
-                    </div>
-                </section>
-                <section id="Sodas" class="sections">
-                    <a href="#Sodas"><span></span>Sodas</a>
-                    <div class="info--detail-item">
-                        <div>
-                            <article><p>Sodas 20 OZ</p></article>
-                            <article><p>Can Soda</p></article>
-                            <article><p>Soda 2 LT</p></article>
-                            <article><p>Guitig 16 OZ</p></article>
-                            <article><p>Powerade / Gatorade 28 OZ</p></article>
-                            <article><p>Aloe Vera Grande</p></article>
-                            <article><p>Agua / Water</p></article>
-                            <article><p>Agua de gallon</p></article>
-                            <article><p>Quaker</p></article>
-                        </div>
-                        <div>
-                            <article><p>Jugos Naturales</p></article>
-                            <article><p>Jugo de naranja carton 14 OZ</p></article>
-                            <article><p>Gelatina 16 OZ</p></article>
-                            <article><p>Monster 16 OZ</p></article>
-                            <article><p>Monster 24 OZ</p></article>
-                            <article><p>Monster 24OZ</p></article>
-                            <article><p>Redd Bull 8 OZ</p></article>
-                            <article><p>Redd Bull 12 OZ</p></article>
-                        </div>
-                    </div>
-                </section>
-                <section id="bebidasCalientes" class="sections">
-                    <a href="#bebidasCalientes"><span></span>Bebidas calientes</a>
-                    <div class="info--detail-item">
-                        <div>
-                            <article><p>Atol de elote</p></article>
-                            <article><p>Chocolate Ambateño</p></article>
-                            <article><p>Café / Coffee</p></article>
-                            <article><p>Café / Coffee Small</p></article>
-                            <article><p>Té / Tea</p></article>
-                        </div>
-                        <div>
-                            <article><p>Vaso de Morocho</p></article>
-                            <article><p>Tarrina de Morocho</p></article>
-                            <article><p>Vaso de Colada Morada</p></article>
-                            <article><p>Tarrina de Colada Morada</p></article>
-                            <article><p>Leche con Cafe instantaneo</p></article>
-                            <article>
-                                <div class="photo-item">
-                                    <img src="https://lh5.googleusercontent.com/6wFDnkgAk9ILC6n60NRGiTfB4z5ZPR6n2sY8u2BMertOtgXW2Eg9iCnw3Rf8o_NT6xo=w2400" alt="Colada Morada">
-                                    <p>Colada Morada</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-                <section id="jugosBatidos" class="sections">
-                    <a href="#jugosBatidos"><span></span>Jugos o Batidos</a>
-                    <div class="info--detail-item">
-                        <article>
-                            <p>Mora, naranjilla, Maracuya, fresa, banano, guanabana, tomate de arbol</p>
-                        </article>
-                    </div>
-                </section>
-
-                <div class="order--buttton">
-                    <button class="header--button"><a href="https://order.tbdine.com/pickup/44803/menu" target="_blank">Ordenar ahora</a></button>
+          </div>
+          <div class="row row-20 row-lg-30">
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow fadeInUp">
+                <div class="product-featured">
+                  <div class="product-featured-figure"><img src="https://lh3.googleusercontent.com/pw/AP1GczOvBxAm027QkcaFWFk6TlmGGPD0hdZ_B-Ya2e4k4Bz1eSUp0zfOuj1Nfv6K_pDG7eAteQISpF7Inm4JdL2TAA7xn4sGwsU2DkXUmwFzHaSF3AQPZNFJkQ1JEuKmZohFX01fpnCmWLXRFdct4IOjbBEAInkfRJXm3ZFIj_Ttf7huE_yguV-wex23v7PI8p4xyKfRn_ia5QrKrjDFBmXjP8u-b-cbadSXB9Di5_9SgUPwHROsLK0qmNYqyqGkVv2SWDc4aSBfosutL4a39TK2h_t6yN2aFG8jY2TLzZewCG9m8bz1EoHhN96oLaJ_tmohXGuu4ywlXjyf8cTfjZdd2dOocqnaUK8O45jmzq0eKw-joQ94ThBo6gEs27nr0KwlJJCR9F19lUXlviHDzpvn7FwEIzrNL_8Im1rPCM7J6qZEd_bpOfZxBGIYKOqRLSHzvMpToCTXXifs93qkVePgj9iIgiSV9WHIiWy4tMiqvLoYW4nECmRJ3c8hEWIZQBGz6NKAWzPsSXjdmF8lD9vjz-_BALGTaPelLh5XHYOnsSmTfZFoALtlptjUl4kkmD5CkDwq0SapkWo4b-51KofppCRl6Bdkdy9j-1x46ipNDu7xN44jN5YpdcCIh_WdIyPsFBdwY-NzvFKu-c3MUsl_WkrcdKHp6rEZKZ5pRm9ueaRM29AFfubfAGk110UwcyKsXDklhLHgNBFunpNX4gDaX0m7gxG9dUozhNQAyjpgHwW6WRNpYdXjFXUfpsuqV0O9tpVyeGC7FNy8D_ydOzCG7j5K0wPPWwQVAurgdK5XMiGDLoziC_r1jCJy79dKB0vgZfF2OzdmpUWtMyHdmtNQPeoOGyaOa3ZKNINEDlrvAVwo-pKG0jSjZF-fCGleQlsNpoHmepwcHOrQqOkj3bPG4rLq=w370-h395-s-no?authuser=0" alt="" width="370" height="395" />
+                  </div>
+                  <div class="product-featured-caption">
+                    <h4><a class="product-featured-title" href="#">Encebollado</a></h4>
+                    <p class="big">$12.25</p>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!--  -->
-        <section  id="contactos" class="opened--restaurant">
-            <div>
-                <h2>TIEMPO DE LA BUENA COMIDA</h2>
-                <div class="time--opened">
-                    <p>Lunes a Sabado: 05:00 am - 08.30 pm</p>
-                    <p>Domingo: 07:00 am - 06.00 pm</p>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow fadeInUp">
+                <div class="product-featured">
+                  <div class="product-featured-figure"><img src="https://lh3.googleusercontent.com/pw/AP1GczPbwsR3qTrf1fS9SC2Y9j6q-EK0KYWazpBc6p4hCSPkyPCqyOjyt_txC-He7o8FZMYPf-tiE5oeoPOsuWasVQYRXHXDxL97K7Gx9PeUXdoEbAkmM4YZeGiqYziz2dPNoapI5DdfiEk0InrecIqpxHawa8GJIc9k4ynX76ju0txBZCJMFZGxCiLgCeOO4ymwqVKste3JNDFOu2FHeQG8KR7SY510qEstSCRd4DT0BpPFNqOpMPiVKWwn_MRD9S2NjYtpCTrw_Jppn-XBd74JeYgcQdZMKcLplB6DB0zEOTS1l1g5ltJRGcwy88DonsXd9FOS7MzB2hrbtIBxGdwkP8zfq2RGC0cYaipMd84a86C6O8LmRfMMw_nDpP5Xv06BHklr2CPNVAw5z7Bq1zuOorY6iiiVrkXl_wQK6lJM6Um3jLfyxy_NGBV30H8m_JCR0p2PPSMP-e-4Mmw9glFhRLxSQbBLzltrQNrfjUOdsAmNxehvlQH4lsWqkW4oCmUiV1ssko-8HN_3U64xvVAbRhJvfozKZUw2BMo47QkcWRFIQ8RpbA-rj35ZMeiPD_sXAmUEcxlW0zLR6R0UXAyq_WCxaOcPBPmk_LUTbocLNCd9tC6HKvm3KZi9gXWR6QSednHTEqzMj9DD1dxvmDg2N2i9rIVcKY7SWJoIJpIcT026P4w2UPjraxmBV4zOpQ3gg7qfQPblfxidlyHBg20OyHFaWx7O9g-vHZDSoRHb0GGvWUpMkZBDRRKMx-jpZ40wZj_MQOw9ytViF74pAkNQxTqzqwiYNbRfOUtlqv1w5ElVAx-81ISEBD1AP8myLyJomeG67Fpp5g3JD7uY12eWbUFT79ItjVxQeyolGxGOxdM-2UDD1Th0UVqjbBXVNzFYMrkyt7LtR2j1c6NA0B9Oyj_X=w370-h395-s-no?authuser=0" alt="" width="370" height="395"/>
+                  </div>
+                  <div class="product-featured-caption">
+                    <h4><a class="product-featured-title" href="#">Tortillas de verde</a></h4>
+                    <p class="big">$2.50</p>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <section class="info--ubication-restaurant">
-            <div class="inf--ubi-restaurant">
-                <h3>testing de alex</h3>
-                <div>
-                    <p>262 Somerset st North Plainfield NJ 07060</p>
-                    <p>telefono: 0000-0000-000</p>
+            <div class="col-md-6 col-lg-4 wow-outer">
+              <div class="wow fadeInUp">
+                <div class="product-featured">
+                  <div class="product-featured-figure"><img src="https://lh3.googleusercontent.com/pw/AP1GczONF1YAbKQfgpqUCfaIowXl5Da7h5BfCzkrUy_85fKW80WU0TJg5E_DBgXggQM2bmCerbNWH8NQ4JwrkgvzFYPJ3YPAxrcDTtO3xF3Ms51E_i0YokO-PmatU6pVy6FUuDIjBoyAMdm4ZipE6KWcEwOIu_QAgQTLc-6_SlyQyjNI2-t_Eguj32WnMkP26ZEvfkhOWq5kyLOhM1j-HKcTbXYdxENzj-Ut06XyLVKrcKm_8tXpZkHfF7OSDBUbKR6xy-iWo_g4RRjX16NXDn_RQRhNr9lxJV99BhFHBxb5IukuPpMGhHhCjjcjrAPjPBexE-1_EKleaEudAFg9JPpr2pySswMkMPri2aWHhkVlmCAjQtagzKvsujpBiU34nllmZxaP3mG4pG9IK4e2wOPjH6aIguKChx4JWB1nzra4vZSPnliuT4wN33uWhdGX4LhcED8sopH-aDVHzxISeWhNoiGDU2PbGOk2yugZnOxUYm7yAu7K-dhHeW6Owf52i2lR2isWN1U9hDI0EqTpZyU_UT-_Y8hez40zoC1DB5bSfP1iwzpwBl_hJqbUp8hOGmU2x0YkxSrctM8Ov7v0Jrj4jQ4I8xACIJUdkRXcHKq2p4bgNJuaCbai7fcOl_1X0CqkJdAGs-otFDXgJQgTQEwZCZoGcoU2TTDhQg-RFEMPk4BtJ_wnD2PHTFaY0xXW3EFjl4HVRzoJU0tPpT4PPMKw2BscNCvAT-GWMeNaJmBK-F-VG9SEsSH_O89_T4AZ3sv0oYUa4ehqULNdX-0aJ4j2emFfg-V2P_fg4dF8BVpqPntz2y0nr4QZZ-k85iqnhhutdregoI1KeaLKwanhHDEmN_-iJF9G3Dnx2VZYMbCQFrfQvZC9en9zuWqwp1-CMJJzCI6YROITbAFO8Juev2GuWMKU=w370-h395-s-no?authuser=0" alt="" width="370" height="395"/>
+                  </div>
+                  <div class="product-featured-caption">
+                    <h4><a class="product-featured-title" href="#">Churrasco</a></h4>
+                    <p class="big">$16.00</p>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="map--ubication">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.3889812500247!2d-74.43086962221173!3d40.62130287140743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ba1f900b380f%3A0x712f72a3e959c128!2sDo%C3%B1a%20Maria%20Restaurant!5e0!3m2!1ses!2sec!4v1678831408728!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-    </main>
-    <!--  -->
-    <footer>
-        <div class="title--footer">
-            <h2>Doña Maria Restaurant</h2>
-            <div class="links--page-section">
-                <p>Quick links</p>
-                <div class="links--page-l2">
-                    <ul>
-                        <li><a href="#SobreNosotros">Sobre Nosotros</a></li>
-                        <li><a href="#nuestroMenu">Nuestro Menu</a></li>
-                        <li><a href="#contactos">Conctactos</a></li>
-                    </ul>
-                    <div class="legend--ecuador">
-                        <img src="https://lh4.googleusercontent.com/lTieuAdYvvJJA2BpatubYrfLotbLG1kXIlz2Vx5bM7EwPQ9S9OAOrSHWJV-nS2v0nRI=w2400" alt="Ecuador">
-                        <p>Orgullosamente Ecuatorianos!</p>
-                    </div>
-
-                </div>
-            </div>
-            <!-- redes Sociales -->
+          </div>
         </div>
-        <div class="info--footer-restaurant">
-            <p>copyright 2023, Doña Maria Restaurant</p> 
-            <p>@AtreyuCam</p>
+      </section>
+      <section class="section section-lg bg-gray-1" id="menu-res">
+        <div class="container">
+          <h2 class="text-center">Nuestro Menu</h2>
+          <div class="row">
+            <div class="col-12">
+              <div class="tabs-custom tabs-horizontal tabs-classic" id="tabs-1">
+                <ul class="nav nav-tabs nav-tabs-classic">
+                  <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab">Antojitos</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-toggle="tab">Tortillas de verde y desayunos</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-toggle="tab">Platos fuertes</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-4" data-toggle="tab">Mariscos</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-5" data-toggle="tab">Sopas</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-6" data-toggle="tab">Baleadas y pupusas</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-7" data-toggle="tab">Bebidas</a></li>
+                  <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-8" data-toggle="tab">Porciones adicionales</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-1-1">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$4.50</p>
+                        <h4 class="event-item-modern-title"><a>Huevos a la copa</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>La yema cremosa de los huevos se mezcla con la textura ligeramente espesa del jugo de carne, creando una experiencia suave.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$2.25</p>
+                        <h4 class="event-item-modern-title"><a>Quimbolitos</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Hechos con harina de maíz, azúcar, mantequilla, leche y queso fresco, ofrecen una explosión de sabores y texturas en cada bocado.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="event-item-modern">
+                        <p class="event-time">$12.95</p>
+                        <h4 class="event-item-modern-title"><a>Volquetero</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Una experiencia sensorial única con atún desmenuzado, la frescura del tomate y la cebolla encurtida contrastando con la suavidad de los chochos y el maíz tostado.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$2.25</p>
+                        <h4 class="event-item-modern-title"><a>Dobladitas de queso</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Exterior crujiente y dorado, producto de la fritura, que da paso a un interior suave y cremoso gracias al queso derretido.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$1.64</p>
+                        <h4 class="event-item-modern-title"><a>Empanadas de carne/pollo</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Exterior dorado y crujiente, que envuelve un relleno suave de carne o pollo, con la textura distintiva de las cebollas y especias.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$2.32</p>
+                        <h4 class="event-item-modern-title"><a>Empanadas de viento</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Bocadillo tradicional ecuatoriano que se caracteriza por su masa ligera y aireada, frita hasta alcanzar una textura dorada y crujiente.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$5.99</p>
+                        <h4 class="event-item-modern-title"><a>Chochos con tostado</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>La combinación de los sabores suaves y ligeramente dulces de los chocos con el toque crujiente y salado de los tostados crea una experiencia culinaria única y deliciosa.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$7.99</p>
+                        <h4 class="event-item-modern-title"><a>Chochos con tostado y chicharon</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>La combinación de los sabores suaves y ligeramente dulces de los chocos con el toque crujiente y salado de los tostados y el chicharon crea una experiencia culinaria única y deliciosa.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$6.99</p>
+                        <h4 class="event-item-modern-title"><a>Chicharon</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Chicharon crugiente, aperitivo tradicional ecuatoriano.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$8.50</p>
+                        <h4 class="event-item-modern-title"><a>Alitas de pollo con papas fritas</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Alitas de pollo con papas fritas crugientes.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$6.99</p>
+                        <h4 class="event-item-modern-title"><a>Salchipapas</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Papas fritas crugiente con porciones de Salchichas.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$6.50</p>
+                        <h4 class="event-item-modern-title"><a>Sanduche de pechuga de pollo a la plancha</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Sanduche de pechuga de pollo.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$6.50</p>
+                        <h4 class="event-item-modern-title"><a>Sanduche de milanesa de pollo</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Sanduche de pollo empanizado.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$6.50</p>
+                        <h4 class="event-item-modern-title"><a>Sanduche de milanesa de carne</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Sanduche de carne empanizada.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-2">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$11.99</p>
+                        <h4 class="event-item-modern-title"><a>Desayuno Doña Maria</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>El "Desayuno Doña María" es un plato reconfortante y abundante que refleja la esencia de la cocina ecuatoriana. Este desayuno se compone de dos tortillas de verde, dos huevos fritos y bistec de carne.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$7.50</p>
+                        <h4 class="event-item-modern-title"><a>Dos tortillas de verde con dos huevos fritos</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Dos tortillas de verde con dos huevos fritos al gusto.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$2.50</p>
+                        <h4 class="event-item-modern-title"><a>Tortillas de verde</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Las tortillas de verde son un plato tradicional en la cocina ecuatoriana, preparadas a base de plátanos verdes.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$11.99</p>
+                        <h4 class="event-item-modern-title"><a>Desayuno americano #1</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Papas asada, jamon, huevo frito y pan tostado.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$13.99</p>
+                        <h4 class="event-item-modern-title"><a>Desayuno centroamericano #1</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Huevos al gusto, frijoles molidos, carne asada, queso, crema, aguacate y dos tortillas.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$13.99</p>
+                        <h4 class="event-item-modern-title"><a>Desayuno centroamericano #2</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Huevos al gusto, frijoles molidos, platano frito, queso, crema, aguacate y dos tortillas.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$16.00</p>
+                        <h4 class="event-item-modern-title"><a>Calentado #1</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-3">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$16.00</p>
+                        <h4 class="event-item-modern-title"><a>Carne apanada</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Carne apanada con papas fritas, arroz, huevo frito y ensalada fresca.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$16.00</p>
+                        <h4 class="event-item-modern-title"><a>Churrasco</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Carne de res frita con papas fritas, arroz, huevo frito y ensalada fresca.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$16.00</p>
+                        <h4 class="event-item-modern-title"><a>Lomo salteado</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Salteado con pimiento, cebolla, tomate acompañado con arroz y papas fritas.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$14.50</p>
+                        <h4 class="event-item-modern-title"><a>Llapingacho con fritada</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Fritada acompañado con arroz, tortillas de papa, mote, huevo frito y ensalada.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$12.25</p>
+                        <h4 class="event-item-modern-title"><a>Llapingacho con chorizo</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>chorizo acompañado con arroz, tortillas de papa, mote, huevo frito y ensalada.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$15.00</p>
+                        <h4 class="event-item-modern-title"><a>Guatita</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Panza acompañado con arroz, huevo frito, platano maduro y ensalada fresca.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$15.50</p>
+                        <h4 class="event-item-modern-title"><a>Seco de chivo</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Chivo acompañado con arroz, platano maduro y ensalada fresca.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$12.50</p>
+                        <h4 class="event-item-modern-title"><a>Bistec criollo al jugo</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Acompañado con arroz, huevo frito, platano frito y aguacate.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$20.25</p>
+                        <h4 class="event-item-modern-title"><a>Bandera serrana</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Seco de chivo, guatita, ceviche de camaron y arroz.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$11.50</p>
+                        <h4 class="event-item-modern-title"><a>Mixturiado</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Fritada acompañado con mote, tostado, chochos, tortilla de papa y curtido.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$20.00</p>
+                        <h4 class="event-item-modern-title"><a>Chugchucara</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Fritada, tostado, canguil, empanada, platano maduro y papas.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$15.25</p>
+                        <h4 class="event-item-modern-title"><a>Pechuga de pollo asado con menestra</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Acompañado con arroz, platano maduro y aguacate.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$15.25</p>
+                        <h4 class="event-item-modern-title"><a>Carne asada con menestra</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Acompañado con arroz, platano maduro y aguacate.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-4">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$12.25</p>
+                        <h4 class="event-item-modern-title"><a>Encebollado</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Sopa con pescado albacora, yuca, cebolla marinada, tomate y jugo de limon servido con maiz tostado y canguil o arroz.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$15.00</p>
+                        <h4 class="event-item-modern-title"><a>Encebollado mixto</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Encebollado con camarón.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$12.00</p>
+                        <h4 class="event-item-modern-title"><a>Ceviche de camarón</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Camarones marinados con lima, cilantro y cebolla servidos con maiz tostado y canguil o arroz.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$16.25</p>
+                        <h4 class="event-item-modern-title"><a>Arroz con Camarones</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Arroz mixto con camarones</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$14.00</p>
+                        <h4 class="event-item-modern-title"><a>Camarones apanados</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Camarones apanados con arroz y ensalada fresca.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$14.00</p>
+                        <h4 class="event-item-modern-title"><a>Camarones al ajillo</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Camarones salteados con pimientos rojos servidos con arroz y patacones.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$16.00</p>
+                        <h4 class="event-item-modern-title"><a>Filete de pescado</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Filete de pescado acompañado con arroz, papas fritas y ensalada fresca.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-5">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$9.37</p>
+                        <h4 class="event-item-modern-title"><a>Caldo de gallina</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Sopa de gallina.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$13.00</p>
+                        <h4 class="event-item-modern-title"><a>Yahuarlocro</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Sopa de tripa, papas, sangre de res, aguacate y curtido.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$15.00</p>
+                        <h4 class="event-item-modern-title"><a>Sopa de bolas de verde</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Sopa de bolas de plantano verde.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$13.00</p>
+                        <h4 class="event-item-modern-title"><a>Caldo de pata</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Caldo de pata.</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-6">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.00</p>
+                        <h4 class="event-item-modern-title"><a>Baleada sencilla</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Tortilla de harina con frijoles, queso y crema.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$4.50</p>
+                        <h4 class="event-item-modern-title"><a>Baleada completa</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Tortilla de harina con frijoles, huevo, queso, crema y aguacate.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$6.50</p>
+                        <h4 class="event-item-modern-title"><a>Baleada con carne asada</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Baleada completa con carne asada.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$6.50</p>
+                        <h4 class="event-item-modern-title"><a>Baleada con pechuga de pollo</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Baleada completa con pechuga de pollo.</p>
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.00</p>
+                        <h4 class="event-item-modern-title"><a>Pupusas de queso</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Camarones apanados con arroz y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.00</p>
+                        <h4 class="event-item-modern-title"><a>Pupusas con frijol y queso</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p></p> -->
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-7">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Morocho</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- p>Sopa con pescado albacora, yuca, cebolla marinada, tomate y jugo de limon servido con maiz tostado y canguil o arroz.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Atol de elote</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Encebollado con camarón.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Chocolate</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Camarones marinados con lima, cilantro y cebolla servidos con maiz tostado y canguil o arroz.</p> -->
+                        </div>
+                      </div>
+                      
+                      <div class="event-item-modern">
+                        <p class="event-time">$2.00</p>
+                        <h4 class="event-item-modern-title"><a>Café</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Camarones apanados con arroz y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$1.50</p>
+                        <h4 class="event-item-modern-title"><a>té</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Camarones salteados con pimientos rojos servidos con arroz y patacones.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Colada morada</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Filete de pescado acompañado con arroz, papas fritas y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$7.03</p>
+                        <h4 class="event-item-modern-title"><a>Tarrina de colada morada</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Filete de pescado acompañado con arroz, papas fritas y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$7.03</p>
+                        <h4 class="event-item-modern-title"><a>Tarrina de morocho</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Filete de pescado acompañado con arroz, papas fritas y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$4.50</p>
+                        <h4 class="event-item-modern-title"><a>juegos o batidos</a></h4>
+                        <div class="event-item-modern-text">
+                          <p>Mora, naranjilla, fresa, banano, guanabana, tomate de arbol y maracuya.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-8">
+                    <div class="box-event-modern">
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Arroz.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- p>Sopa con pescado albacora, yuca, cebolla marinada, tomate y jugo de limon servido con maiz tostado y canguil o arroz.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Patacones/tostones.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Encebollado con camarón.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Platano maduro.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Camarones marinados con lima, cilantro y cebolla servidos con maiz tostado y canguil o arroz.</p> -->
+                        </div>
+                      </div>
+                      
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.50</p>
+                        <h4 class="event-item-modern-title"><a>Frijoles negros o rojos.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Camarones apanados con arroz y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$4.00</p>
+                        <h4 class="event-item-modern-title"><a>Orden de papas fritas.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Camarones salteados con pimientos rojos servidos con arroz y patacones.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.00</p>
+                        <h4 class="event-item-modern-title"><a>Aguacate.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Filete de pescado acompañado con arroz, papas fritas y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$1.50</p>
+                        <h4 class="event-item-modern-title"><a>1/2 aguacate.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Filete de pescado acompañado con arroz, papas fritas y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      <div class="event-item-modern">
+                        <p class="event-time">$3.00</p>
+                        <h4 class="event-item-modern-title"><a>Porción de mote.</a></h4>
+                        <div class="event-item-modern-text">
+                          <!-- <p>Filete de pescado acompañado con arroz, papas fritas y ensalada fresca.</p> -->
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
-
-</body>
+      </section>
+      <section class="section">
+        <div class="row isotope-wrap">
+          <!-- Isotope Content-->
+          <div class="col-lg-12">
+            <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group" data-lg-thumbnail="false">
+              <div class="row no-gutters row-condensed">
+                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*">
+                  <div class="wow slideInDown">
+                    <div class="gallery-item-classic"><img src="https://lh3.googleusercontent.com/pw/AP1GczNXmMgTP6dvoVdlOyGRzZINg9auytm1iczCdPsJr9QJA6kTGZoqUK80jcI2IcpgJx24J0Eq9YbnJucQ2hQAjtscJLkwwp6NZHpMXQRRwh3JCFtsSaZ4YewjIYj-va0eQdzH9m2Buh9I506_JJEgT9ubw2nk7_rqyKT_sZe_qj_4p5Dm3We3aoUSOmexkMzekXJizo6UkpvtTcD7P7-hSPD_mTxgYeculLAOA9zVNLx0Agt42RR4Ta9LXHj6tQmgVU_tThU08MfTT3TQBBq7do3EXk1jvigzXo_eTfUYOoR1s30JGFcbl0falEXOzNeSEEmHoOdbPUbtn6HwmPzEapFcWn5T0y5dpps89UUc1E6UBCd0zpPx7Wqd2AIExq19Qo4xetSyyr-MnoBQhOKZRbBe19y8Ht6CRjEGtQBuMI0YKOs8zDh9xUHQVJHDTHJTK6b5xN1dgTMPcP_dT-MdC8rwZlcDBscgoHXngDjDMyDCbomm7NeJRWFi9bQM22fHj-NnLqWcmz0Z65dQpuMS1-HRrn0239jqF_o2gaDV8rAVhYN55ewTzzB-Vdsvs33YfeaRf5yOxG4kWJZChX5JdcEt26WC6QpLHazR-rPle9Ezhixpbg4cLJJXnMdFwk25Zq5fKx4RzmOVvJnY-GKhPdAQSy2KdePL3DtJFdBfLb-JFeYxktopCJQ0UU2Gdh72hsCrbfxbdXV8YioKHZNe5gxz_Kyu_q71zH-UkOYfEuPkkC4tRN1n1720ApnClutK6L-KDkahT2QFcGgM5AxZXsxAeNwyH9TdZEB4lcNqmidAQpSpXypwruP0sJ-z4mAWqzjyqtzBteX6JJi2s68686ZQrRqnb4Cnwd4CQwN4RJo36VbiLhObzdXxy_eOX-VyoO5iQnNo7w2Wk5ZuEWq0yd5ZlQ=w640-h429-s-no?authuser=0" alt="" width="640" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="https://lh3.googleusercontent.com/pw/AP1GczNXmMgTP6dvoVdlOyGRzZINg9auytm1iczCdPsJr9QJA6kTGZoqUK80jcI2IcpgJx24J0Eq9YbnJucQ2hQAjtscJLkwwp6NZHpMXQRRwh3JCFtsSaZ4YewjIYj-va0eQdzH9m2Buh9I506_JJEgT9ubw2nk7_rqyKT_sZe_qj_4p5Dm3We3aoUSOmexkMzekXJizo6UkpvtTcD7P7-hSPD_mTxgYeculLAOA9zVNLx0Agt42RR4Ta9LXHj6tQmgVU_tThU08MfTT3TQBBq7do3EXk1jvigzXo_eTfUYOoR1s30JGFcbl0falEXOzNeSEEmHoOdbPUbtn6HwmPzEapFcWn5T0y5dpps89UUc1E6UBCd0zpPx7Wqd2AIExq19Qo4xetSyyr-MnoBQhOKZRbBe19y8Ht6CRjEGtQBuMI0YKOs8zDh9xUHQVJHDTHJTK6b5xN1dgTMPcP_dT-MdC8rwZlcDBscgoHXngDjDMyDCbomm7NeJRWFi9bQM22fHj-NnLqWcmz0Z65dQpuMS1-HRrn0239jqF_o2gaDV8rAVhYN55ewTzzB-Vdsvs33YfeaRf5yOxG4kWJZChX5JdcEt26WC6QpLHazR-rPle9Ezhixpbg4cLJJXnMdFwk25Zq5fKx4RzmOVvJnY-GKhPdAQSy2KdePL3DtJFdBfLb-JFeYxktopCJQ0UU2Gdh72hsCrbfxbdXV8YioKHZNe5gxz_Kyu_q71zH-UkOYfEuPkkC4tRN1n1720ApnClutK6L-KDkahT2QFcGgM5AxZXsxAeNwyH9TdZEB4lcNqmidAQpSpXypwruP0sJ-z4mAWqzjyqtzBteX6JJi2s68686ZQrRqnb4Cnwd4CQwN4RJo36VbiLhObzdXxy_eOX-VyoO5iQnNo7w2Wk5ZuEWq0yd5ZlQ=w640-h429-s-no?authuser=0" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3">
+                  <div class="wow slideInDown">
+                    <div class="gallery-item-classic"><img src="https://lh3.googleusercontent.com/pw/AP1GczONibArn6-GSu3gevHPqhjyKoI6c1g5Z9O-6m0n1X_Hpkkx0Y0l2R9bccGVA71iHMl7869Z93_LdxrjYZp62zt148oS-awB3Fn_7zh8LsXn5vBUP4_7jYRoWSYi4GtT21rsGvdpNt1WMTBaljHRuywl8sMqrJI0hVEEXS8qayyQnhuIGFUC-cAAxZBLSfeoxLssxnx4P606gm68vtxg6Xz-iCRiLmvtja6tx0wcPv3sRtJPwfAeXI6ay4wknc9ssM9iT4K-uCbqeWS8lpeNilKKUqOIl0AgjDTokDBBZruiHuYGTAH1wCkrDslZS4CtKeUlY1Umi9Qlpm4XR7V8sCQwZnHnvvQgTpOe18ecrxS4SDG-UCCedd2opG_JLTXVjNuuuTdua-LytrbG16xac1YVsY6RyrhjLKLN10ZCYDUlxFv_cDxB0J9r_-cTA23g9WURCanzM1R6FUCXnYlezppHW-8HFfJkBqFa1eq-ahLv0aqyc1-p2TsVrVG8cHMO3Dptyk07TwBuFPSOtYrfqKPcCdZ1775Nlck5P5-MzgUwT5rOOSuSp73WN2vBdm3vvz2hjGql-9rQcNwHK4-q3L2h_4416r48GjeeYEBqmrfN1OLYOihnyJcRxs5CrXjU1paqwGxVAJkRUBValdjm08ptRHoeymqdma64Vwt2k-LD-msUFoQX65r3D-GWzfdImvHa95KPZyKyUJ_8EOzbrX0UsDNExqcwXQTzxXmuMR0znEdh440mvb5becfeRhjiXQx9SkSeBASB_yzRhRj7rs8pY6cN3n88Wc2WtNpOF6FBPDfPuBZL12gAcoXmeBp1ojcRCAh6Kr80dof0bEctams4NL_0WPnz1b2AGJQ81SgFItzzve-vetutu5donycMWozz-LW9C7GasQ82JAQFchUH_g=w640-h429-s-no?authuser=0" alt="" width="640" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="https://lh3.googleusercontent.com/pw/AP1GczONibArn6-GSu3gevHPqhjyKoI6c1g5Z9O-6m0n1X_Hpkkx0Y0l2R9bccGVA71iHMl7869Z93_LdxrjYZp62zt148oS-awB3Fn_7zh8LsXn5vBUP4_7jYRoWSYi4GtT21rsGvdpNt1WMTBaljHRuywl8sMqrJI0hVEEXS8qayyQnhuIGFUC-cAAxZBLSfeoxLssxnx4P606gm68vtxg6Xz-iCRiLmvtja6tx0wcPv3sRtJPwfAeXI6ay4wknc9ssM9iT4K-uCbqeWS8lpeNilKKUqOIl0AgjDTokDBBZruiHuYGTAH1wCkrDslZS4CtKeUlY1Umi9Qlpm4XR7V8sCQwZnHnvvQgTpOe18ecrxS4SDG-UCCedd2opG_JLTXVjNuuuTdua-LytrbG16xac1YVsY6RyrhjLKLN10ZCYDUlxFv_cDxB0J9r_-cTA23g9WURCanzM1R6FUCXnYlezppHW-8HFfJkBqFa1eq-ahLv0aqyc1-p2TsVrVG8cHMO3Dptyk07TwBuFPSOtYrfqKPcCdZ1775Nlck5P5-MzgUwT5rOOSuSp73WN2vBdm3vvz2hjGql-9rQcNwHK4-q3L2h_4416r48GjeeYEBqmrfN1OLYOihnyJcRxs5CrXjU1paqwGxVAJkRUBValdjm08ptRHoeymqdma64Vwt2k-LD-msUFoQX65r3D-GWzfdImvHa95KPZyKyUJ_8EOzbrX0UsDNExqcwXQTzxXmuMR0znEdh440mvb5becfeRhjiXQx9SkSeBASB_yzRhRj7rs8pY6cN3n88Wc2WtNpOF6FBPDfPuBZL12gAcoXmeBp1ojcRCAh6Kr80dof0bEctams4NL_0WPnz1b2AGJQ81SgFItzzve-vetutu5donycMWozz-LW9C7GasQ82JAQFchUH_g=w640-h429-s-no?authuser=0" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 isotope-item wow-outer" data-filter="Category 3">
+                  <div class="wow slideInDown">
+                    <div class="gallery-item-classic"><img src="https://lh3.googleusercontent.com/pw/AP1GczP1LPq37TDNFywVV2osmfhJMchOzwFBRkpmRvIxhQ9KFPy_IDyPgpXvw_7QbfEz5Kbw6DY7qGdgk8jWHUKSe71IyQnqGLONjF9dY4zh4HE44qwlhQEI2YqSoeiajN5pIj5n1xoy4Z4bzA8HoJhL-jcyiq2tmsWzOyLjauC20HUKome3XGGPVofd45uH4ocPlOP-p_2dVCcBft3TRUfPziSZFcb-NTFEoocCu_y3R2BDqPIZq5tEX7DvtTVAhwHxLhk2IFOMOF-xlmEvIDU7bPEi3kHoVru8aeceYpxiwKXMdjhMZI9sH3pnWO_kZxE0NVpd8qLPIN648xeuwFLE1IJ47FOZu4EmK3CWrD45OHpWbFp4Kk5L4x6euiblEnbSY818M6_0ECxXwLv6sv88t2eMQvSYeQYzIU_EPznCBYB-RGdkZhyDtiyetHd93b7P47WUM2ijBzfwy5IEzo9Ok0CTQEZvnBp4iHioQSSgD5aA_y5KSTfwSz7la_5IzLGbh-fVTIgP76YIS2NJ3c0dxGle5qJUG3OcrMZUzZCap-aq4a1Pjd8PfURl1r3MUrtt9-WiIfbeubPKA70S6Zn2PgijtjULH1kZjSbg2t4ktGfil5YI712h6kS17FAohK_gDK7AXq5TgncZwD-h6FL-aMe8F1ArbnlS6d19Y3a8v4TSnQSr9IXUdWxpLn8XpWjk-i4ZWfijLu_52YPsHzAQsnUXr48svOdRadePJbWntAGLLUNB07i-x1rz3XwUsOqz2AylkLmhCygQHu_QvQwP9dnUC6KQfVgz5KoofupFalf9qHO1UPLUqiXMSW8ItjPAwnTm6sL-9yzc_KMumeqCC0irbRby-tmt6f57Yv2Bl-3NmSROu4qCJVF-fc_m4ZzAI3Ebyspf0zvuZ679JIZRkOqdOg=w640-h429-s-no?authuser=0" alt="" width="640" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="https://lh3.googleusercontent.com/pw/AP1GczP1LPq37TDNFywVV2osmfhJMchOzwFBRkpmRvIxhQ9KFPy_IDyPgpXvw_7QbfEz5Kbw6DY7qGdgk8jWHUKSe71IyQnqGLONjF9dY4zh4HE44qwlhQEI2YqSoeiajN5pIj5n1xoy4Z4bzA8HoJhL-jcyiq2tmsWzOyLjauC20HUKome3XGGPVofd45uH4ocPlOP-p_2dVCcBft3TRUfPziSZFcb-NTFEoocCu_y3R2BDqPIZq5tEX7DvtTVAhwHxLhk2IFOMOF-xlmEvIDU7bPEi3kHoVru8aeceYpxiwKXMdjhMZI9sH3pnWO_kZxE0NVpd8qLPIN648xeuwFLE1IJ47FOZu4EmK3CWrD45OHpWbFp4Kk5L4x6euiblEnbSY818M6_0ECxXwLv6sv88t2eMQvSYeQYzIU_EPznCBYB-RGdkZhyDtiyetHd93b7P47WUM2ijBzfwy5IEzo9Ok0CTQEZvnBp4iHioQSSgD5aA_y5KSTfwSz7la_5IzLGbh-fVTIgP76YIS2NJ3c0dxGle5qJUG3OcrMZUzZCap-aq4a1Pjd8PfURl1r3MUrtt9-WiIfbeubPKA70S6Zn2PgijtjULH1kZjSbg2t4ktGfil5YI712h6kS17FAohK_gDK7AXq5TgncZwD-h6FL-aMe8F1ArbnlS6d19Y3a8v4TSnQSr9IXUdWxpLn8XpWjk-i4ZWfijLu_52YPsHzAQsnUXr48svOdRadePJbWntAGLLUNB07i-x1rz3XwUsOqz2AylkLmhCygQHu_QvQwP9dnUC6KQfVgz5KoofupFalf9qHO1UPLUqiXMSW8ItjPAwnTm6sL-9yzc_KMumeqCC0irbRby-tmt6f57Yv2Bl-3NmSROu4qCJVF-fc_m4ZzAI3Ebyspf0zvuZ679JIZRkOqdOg=w640-h429-s-no" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3">
+                  <div class="wow fadeInUp">
+                    <div class="gallery-item-classic"><img src="https://lh3.googleusercontent.com/pw/AP1GczO01CXHXWzj3Tykbb0kkxu_52ZB3OUmHSYqIMp8TFFISEuXJlBQBHAk905QG1s5ljoTcpzejQ0zwo_0K8wuUpjCSjSZ8j0x5FaBZ99AR06gMpdQinr3B-a6akydm2OgFdRumjDouf0ettW8_3niA69U_xmBB-uSjirsTd4kBi4UItcW0SddhBvp2133BqIj6RbnGaP4b6WdItoQxmEgubsF4iOUUgtaP_1jFN7t6cMAGjV5AhcruJGnmj4J_U869YKPhAvgSgfoxsDxEXWrpoxt6J56p2FlrjA2bBmLbABaKu72RHWcSmfa3rVOFlzmu0gKWWo_G7RsNq7AtmlSs2-oALq5-yO_Q1u7Jvdn91-tWEzq0eS08HqevNBCsSZm4hSq70Zgt9rYwfPKl2Cwi4RvAgMj_6FZbMvlt1ijNPVDPkIykNd-WOjW0XEOkhK5LQeomDV2nBuKWkaoSQJZSyupoOqTZKFhyUXDhlLmaTVnOaA8AfeyvY92ulWN7DIrEJt0GaD7bC_H3MRTMVfK2uJXZrcLkFvpoaZ7206ec-ZyCB-P_X8VxRZyE6nEQgjDgZGIO345TzUG51IkdOMmJj0rfCPjuz9-z2c772h7GfQHahxtCaVDO99ImJttzurKhV6ovNWRItTdQqssm5nTIIwSJpcjDjQJOBc5L8dPSDjeNTO8AiwRGfteivsgQ3PceETTA3gtKk0fQQjkFvCFjQQoasWI2AGS-AX5dSRUIWZ7urzDxNmyAKFzgjykxKKdIkFyC4lIPf11u_znYiHReO1B2FJO-sCE9B2-t3_HzlBdY-8ssEJYTCcOiNZM7ZtjZNQmrj0ZJacAfa33k9Bqhhcbn3TE80XmKvTe5UX5jPj507ay1VJNcaYikG2fntHECNywDX0eTvGzTbO7xGapGx8itA=w962-h429-s-no?authuser=0" alt="" width="960" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="https://lh3.googleusercontent.com/pw/AP1GczO01CXHXWzj3Tykbb0kkxu_52ZB3OUmHSYqIMp8TFFISEuXJlBQBHAk905QG1s5ljoTcpzejQ0zwo_0K8wuUpjCSjSZ8j0x5FaBZ99AR06gMpdQinr3B-a6akydm2OgFdRumjDouf0ettW8_3niA69U_xmBB-uSjirsTd4kBi4UItcW0SddhBvp2133BqIj6RbnGaP4b6WdItoQxmEgubsF4iOUUgtaP_1jFN7t6cMAGjV5AhcruJGnmj4J_U869YKPhAvgSgfoxsDxEXWrpoxt6J56p2FlrjA2bBmLbABaKu72RHWcSmfa3rVOFlzmu0gKWWo_G7RsNq7AtmlSs2-oALq5-yO_Q1u7Jvdn91-tWEzq0eS08HqevNBCsSZm4hSq70Zgt9rYwfPKl2Cwi4RvAgMj_6FZbMvlt1ijNPVDPkIykNd-WOjW0XEOkhK5LQeomDV2nBuKWkaoSQJZSyupoOqTZKFhyUXDhlLmaTVnOaA8AfeyvY92ulWN7DIrEJt0GaD7bC_H3MRTMVfK2uJXZrcLkFvpoaZ7206ec-ZyCB-P_X8VxRZyE6nEQgjDgZGIO345TzUG51IkdOMmJj0rfCPjuz9-z2c772h7GfQHahxtCaVDO99ImJttzurKhV6ovNWRItTdQqssm5nTIIwSJpcjDjQJOBc5L8dPSDjeNTO8AiwRGfteivsgQ3PceETTA3gtKk0fQQjkFvCFjQQoasWI2AGS-AX5dSRUIWZ7urzDxNmyAKFzgjykxKKdIkFyC4lIPf11u_znYiHReO1B2FJO-sCE9B2-t3_HzlBdY-8ssEJYTCcOiNZM7ZtjZNQmrj0ZJacAfa33k9Bqhhcbn3TE80XmKvTe5UX5jPj507ay1VJNcaYikG2fntHECNywDX0eTvGzTbO7xGapGx8itA=w962-h429-s-no?authuser=0" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2">
+                  <div class="wow fadeInUp">
+                    <div class="gallery-item-classic"><img src="https://lh3.googleusercontent.com/pw/AP1GczMIfGFXqu91HC7rhjV6KKGn6SjkyeEK3ojgmOutCKNI99txNpx19OI_H9atoDdQ-iVtgM0isyuvb6Xcp09ULA7nsZWn3FOGFhhg3hvIQtVtTtlaZsgUjR2io4rEZYE2dZfMzoXnulBuh8VN9cUDhDN0x9NH1O5gXZdTx1YV2Cy1iuTYWi15kjHJ35WuGvzn1pgFABGGH1C-nUDx8tyKtMFCgU1X1dPHXd3JHRFjumFICoSB6UVQE1kQRkVbYhqh_OpT8X5PTPU_CdxuG2rcTbS3eSrJ5yP6BhN4JLFi2V9NezgBtSj5hp5GVOWBwkOLJjzL2ZeB121pPkMmeHej7rVUdy8CoTF1x81RJmDBRvLtctEBF0DZEEo-OGPErFSaxHz57yAi3SAqUfNIUuBLW3OCa4ZxwtNBS6ujt66MW-MgU_ltjwNaNz7XxNHUXLDy5DYK7lkqmjQcqU9asZKrEAZRcGgsSQHpzithkqjt4IGXpvcdOkoyAu1G9nyBlcSXOH32Kzn_bJ27SCscUTz-HXdyuHElykTmNj7i8GdvT3gABvVlpO3BWvBwhlTae7wuVAjGpUzA2sUexAgn7MxQOy04sNEqzBn44yVyAjL-qS2U6CtQSff8U2bL-CT9DO1Lgw0ewh0YQd1apYMjlfG-vH1BmcYJCMuLUl7_C2bjIUZz6Z3444C41QztKEbLPG1BBHc01Mb2ChedaN_EGf3WlOCT3uDmjwlGgBOu864TE6zkYuWk3wt1T9EW3vQFd2a7E71U5nHNg3upjWmX2v4pj6FhqDhIqMxq1sMph7esDzjQZIAAhlMO5iSGM7bj_YlXxt7N8qj-Bkf5L5TRD1pB5yAATPC5FyIfbNgVtQH1xSXDgCja67YgslVvXI8PkNjNSevSPaciXVvnZhkTsh_fsy57HA=w962-h429-s-no?authuser=0" alt="" width="960" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="https://lh3.googleusercontent.com/pw/AP1GczMIfGFXqu91HC7rhjV6KKGn6SjkyeEK3ojgmOutCKNI99txNpx19OI_H9atoDdQ-iVtgM0isyuvb6Xcp09ULA7nsZWn3FOGFhhg3hvIQtVtTtlaZsgUjR2io4rEZYE2dZfMzoXnulBuh8VN9cUDhDN0x9NH1O5gXZdTx1YV2Cy1iuTYWi15kjHJ35WuGvzn1pgFABGGH1C-nUDx8tyKtMFCgU1X1dPHXd3JHRFjumFICoSB6UVQE1kQRkVbYhqh_OpT8X5PTPU_CdxuG2rcTbS3eSrJ5yP6BhN4JLFi2V9NezgBtSj5hp5GVOWBwkOLJjzL2ZeB121pPkMmeHej7rVUdy8CoTF1x81RJmDBRvLtctEBF0DZEEo-OGPErFSaxHz57yAi3SAqUfNIUuBLW3OCa4ZxwtNBS6ujt66MW-MgU_ltjwNaNz7XxNHUXLDy5DYK7lkqmjQcqU9asZKrEAZRcGgsSQHpzithkqjt4IGXpvcdOkoyAu1G9nyBlcSXOH32Kzn_bJ27SCscUTz-HXdyuHElykTmNj7i8GdvT3gABvVlpO3BWvBwhlTae7wuVAjGpUzA2sUexAgn7MxQOy04sNEqzBn44yVyAjL-qS2U6CtQSff8U2bL-CT9DO1Lgw0ewh0YQd1apYMjlfG-vH1BmcYJCMuLUl7_C2bjIUZz6Z3444C41QztKEbLPG1BBHc01Mb2ChedaN_EGf3WlOCT3uDmjwlGgBOu864TE6zkYuWk3wt1T9EW3vQFd2a7E71U5nHNg3upjWmX2v4pj6FhqDhIqMxq1sMph7esDzjQZIAAhlMO5iSGM7bj_YlXxt7N8qj-Bkf5L5TRD1pB5yAATPC5FyIfbNgVtQH1xSXDgCja67YgslVvXI8PkNjNSevSPaciXVvnZhkTsh_fsy57HA=w962-h429-s-no?authuser=0" data-lightgallery="item">zoom</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg text-center bg-default" id="contactos-sec">
+        <div class="container">
+          <div class="row row-50">
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-classic">
+                <div class="box-icon-inner decorate-triangle"><span class="icon-xl linearicons-phone-incoming"></span></div>
+                <div class="box-icon-caption">
+                  <h4><a href="tel:#">908-333-3092</a></h4>
+                  <p>Llámanos y con gusto te atenderemoss</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-classic">
+                <div class="box-icon-inner decorate-circle"><span class="icon-xl linearicons-map2"></span></div>
+                <div class="box-icon-caption">
+                  <h4><a href="#">262 Somerset st North Plainfield NJ 07060 United States</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="box-icon-classic">
+                <div class="box-icon-inner decorate-rectangle"><span class="icon-xl linearicons-paper-plane"></span></div>
+                <div class="box-icon-caption">
+                  <h4><a href="mailto:#">dona.maria.ec@gmail.com</a></h4>
+                  <p>Escribenos a nuestro email</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="map--ubication">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.3889812500247!2d-74.43086962221173!3d40.62130287140743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ba1f900b380f%3A0x712f72a3e959c128!2sDo%C3%B1a%20Maria%20Restaurant!5e0!3m2!1ses!2sec!4v1678831408728!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+      <!-- Page Footer-->
+      <footer class="section footer-minimal context-dark">
+        <div class="container wow-outer">
+          <div class="wow fadeIn">
+            <div class="row row-60">
+              <div class="col-12"><a href="index.html"><img src="https://lh3.googleusercontent.com/pw/AP1GczORIHmiX-AuTIS37mky27mWhnu-Mzvkaxxaq9O6rX49Rb4yipPL9sk8YZWwO5wKsoTAx-TOxehqYXX2D2CM15kF7GMuv1s9UnK1OBDQIFYH5iczHHOWVk7reQ0waC6Uyuk_KR0n9zcNOkhA9QBI3AOfaE0np2F1VTF9nj060MnlumFP1Vjfa6-Ge7dqXtspCFBPXDgyjVIfLjkdq6l2ApIuN-KfX2Nb1pNOh9V0F7CvPlmlVyEAoWDfqy1g4_qiPnCCyoPjVNX5Y2oY17s22MR5kCIabpMY8HZu5kCzlDAXQWuipT03oG-1qhZoULiDLCxCZAoTQ9ndVcWguJdj26ePUrzehey7gzVnk7a2UOfPdr2LHzI0eQhkwUQ8Ot9ZLJ0Hc7_3zpnONXmXeUdd3XQ-m9B-VZ51wBoQDNGq_AUm9u1J5yhXzYaNKZJTmYIYieH1I0_UOWb4Q5cSHhprZOGp9-TG9WiHOHuCAak6a9qbeflTSFNnnP1c0tM86fG5T1iY6Q-Gd1hwCDpoRQOYRRwowDIWfRUeFltCRik7drng9pKkHdDoerbFcIjIHxmKwiN_WDXgs9BDJY4Xtf8a1BBdWpt4EQy7a7tuED7xFaMcN0Cf4dKSJidLLx2YWIMhtZ8PrzZpCbp1TtWgdVWFoQnSuToyB8dufR64OrwpqyFH9gnDuuITYgB6llA4_0LoEff4jMWfIr0NmhT42WAHxORQ-1FP-JGHW75e16-7-vCvwvPuPKVsE_6r7s1om6Bi9MWXzRRrMhZRNi8Zm9k8r-BW3J2SoW_W0FCq-t_qAmUAlxVQ-YvYF8KPUTDW_alNjJUvFZn6oqIj3kLNII7iopA-UucZcTeyNAQREudlb0MFGbDrO8g0ZLIz9kyHvhEXxJXhMWwr4X3F54SHIvQdN0OQMQ=w820-h627-s-no?authuser=0" alt="" width="140" height="57"/></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="#menu-res">Menu</a></li>
+                  <li><a href="#section-about">Nosotros</a></li>
+                  <li><a href="#contactos-sec">Contactos</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Doña Maria Restaurant</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span>. Design&nbsp;by&nbsp;<a href="https://github.com/atreyucam">Atreyucam</a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
