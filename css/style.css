@@ -13638,3 +13638,14 @@ html .dtp .hidden {
 html .dtp .invisible {
 	visibility: hidden;
 }
+
+.estilo-per{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.estilo-per a{
+	background-color: #00E175;
+}
